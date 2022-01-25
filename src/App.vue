@@ -32,7 +32,7 @@ export default {
         params: {
           q: this.city,
           lang: "it",
-          appid: "567a30ac0bf63a04687e6450b6c7f1a9"
+          appid: process.env.VUE_APP_MY_OPEN_WEATHER_KEY
         }
       })
       .then((res) => {
