@@ -15,7 +15,7 @@
       :city="city"
       :multiLine="true"
       :weather="weatherData.daily"
-      >Meteo Ogni Giorno</WeatherComponent
+      >Meteo ogni Giorno</WeatherComponent
     >
 
     <WeatherComponent
@@ -23,7 +23,7 @@
       :city="city"
       :multiLine="true"
       :weather="weatherData.hourly"
-      >Meteo Ogni Ora</WeatherComponent
+      >Meteo ogni Ora</WeatherComponent
     >
   </div>
 </template>

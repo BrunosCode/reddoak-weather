@@ -1,9 +1,9 @@
 <template>
   <div class="WeatherComponent">
 
-    <div class="WeatherComponent__head">
+    <div class="WeatherComponent__head"  @click="showInfo = !showInfo">
       <h2 class="WeatherComponent__title"><slot></slot> a {{city}}</h2>
-      <button class="btn" @click="showInfo = !showInfo">
+      <button class="btn">
         <i v-if="showInfo" class="arrow down"></i>
         <i v-else class="arrow up"></i>
       </button>
