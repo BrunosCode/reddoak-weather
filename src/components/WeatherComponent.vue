@@ -2,7 +2,7 @@
   <div class="WeatherComponent">
 
     <div class="WeatherComponent__head">
-      <h2 class="WeatherComponent__title"><slot></slot></h2>
+      <h2 class="WeatherComponent__title"><slot></slot> a {{city}}</h2>
       <button class="btn" @click="showInfo = !showInfo">
         <i v-if="showInfo" class="arrow down"></i>
         <i v-else class="arrow up"></i>
@@ -28,6 +28,10 @@ export default {
   props: {
     weather: {
       type: [Object, Array],
+      required: true
+    },
+    city: {
+      type: String,
       required: true
     }
   },

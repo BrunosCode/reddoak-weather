@@ -4,14 +4,14 @@
     <CityInput @city="searchWeather" />
 
     <WeatherComponent
-      v-if="weather.current"
+      v-if="weatherData.current"
       :city="city"
       :weather="[weatherData.current]"
       >Meteo Oggi</WeatherComponent
     >
 
     <WeatherComponent
-      v-if="weather.daily"
+      v-if="weatherData.daily"
       :city="city"
       :multiLine="true"
       :weather="weatherData.daily"
@@ -19,7 +19,7 @@
     >
 
     <WeatherComponent
-      v-if="weather.hourly"
+      v-if="weatherData.hourly"
       :city="city"
       :multiLine="true"
       :weather="weatherData.hourly"
